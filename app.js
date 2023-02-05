@@ -15,11 +15,11 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 app.get('/',(req, res, next)=>{
     console.log(users);
-    res.render(path.join(__dirname,'../Third-server-Express','/views','add-user.pug'));
+    res.render('add-user');
 });
 
 app.get('/users',(req, res, next)=>{
-    res.render(path.join(__dirname,'../Third-server-Express','/views','users.pug'),{users:users})
+    res.render('users',{users:users})
 });
 
 
