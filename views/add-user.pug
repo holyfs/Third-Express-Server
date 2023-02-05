@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Add-user
+    body   
+        form.product-form(action="/add-user", method="POST")
+            .form-control
+                label(for="name") Name
+                input(type="text", name="name")#name
+            button.btn(type="submit") Add User
